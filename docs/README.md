@@ -1,7 +1,5 @@
 # Building an ETL pipeline with Apache Airflow and Visualizing AWS Redshift data using Microsoft Power BI
 
-### Check the article here:  <a href="https://aws.plainenglish.io/uber-expenses-tracking-with-airflow-redshift-powerbi-27688a686f60">Building an ETL data pipeline with Apache Airflow and Visualizing AWS Redshift data using Microsoft Power BI</a>
-
 <p align="justify">
 Have you heard phrases like <strong>Hungry? You're in the right place</strong> or <strong>Request a trip, hop in, and relax.</strong> ? Both phrases are very common in our daily lives, they represent the emblems of the two most important businesses with <a href="https://qz.com/1889602/uber-q2-2020-earnings-eats-is-now-bigger-than-rides/"> millionaire revenues </a> from UBER. <strong>Have you ever thought about how much money you spend on these services?</strong> The goal of this project is to track the expenses of <a href="https://www.uber.com/">Uber Rides</a> and <a  href="https://www.ubereats.com/">Uber Eats</a> through a data Engineering processes using technologies such as <a href="https://airflow.apache.org/">Apache Airflow</a>, <a href="https://aws.amazon.com/es/redshift/">AWS Redshift</a> and <a href="https://powerbi.microsoft.com/es-es/">Power BI</a>. Keep reading this article, I will show you a quick and easy way to automate everything step by step.
  
@@ -9,7 +7,7 @@ Have you heard phrases like <strong>Hungry? You're in the right place</strong> o
 
 # Architecture - Uber expenses tracking
 
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/architecture.png)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/architecture.png)
 
 
 ## What are the data sources?
@@ -22,12 +20,12 @@ Every time an Ubers Eat or Uber Rides service has ended, you will receive a paym
 
 ### Uber Rides receipt example
 
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/rides_receipt_example.png)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/rides_receipt_example.png)
  
 
 ### Uber Eats receipt example
 
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/eats_receipt_example.png)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/eats_receipt_example.png)
 
 
 ## Data modelling
@@ -38,7 +36,7 @@ Once the details for each type of receipt have been detected, it is easy to know
 </p>
 
  
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/dwh_schema.jpg)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/dwh_schema.jpg)
 
 
 
@@ -385,13 +383,13 @@ There is a couple of thing to configure to ensure the successful execution of yo
 
 
  
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/variables.png)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/variables.png)
 
 
 - Now go to Admin -> Connections and put the Connections needed, you AWS credentials and Your Redshift credentials
 
  
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/connections.png)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/connections.png)
 
 
 ### Running DAG
@@ -463,7 +461,7 @@ Below is the final DAG for this project:
 
 
  
-![alt text](https://wittline.github.io/uber-expenses-tracking/Images/dag.PNG)
+![alt text](https://samruddhiupatil.github.io/uber-expenses-tracking/Images/dag.PNG)
 
 
 ## Visualizing AWS Redshift data using Microsoft Power BI
@@ -497,8 +495,8 @@ Now, you will connect Power BI Desktop to AWS Redshift data, create a dashborad 
 Any ideas or feedback about this repository?. Help me to improve it.
 
 ## Authors
-- Created by <a href="https://www.linkedin.com/in/ramsescoraspe"><strong>Ramses Alexander Coraspe Valdez</strong></a>
-- Created on 2021
+- Created by <a href="https://www.linkedin.com/in/samruddhipatilmscs"><strong>Samruddhi Patil</strong></a>
+- Created on 2023
 
 ## License
 This project is licensed under the terms of the Apache License.
